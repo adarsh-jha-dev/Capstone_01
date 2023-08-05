@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hobbies</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        img{
+            width: 100%;
+            height: 409px;
+        }
+        .item{
+            margin: 10px;
+            justify-content: space-between;
+        }
+        h3{
+            text-align: center;
+        }
+        @media (min-width : 700px) and (max-width : 1300px) {
+            .container{
+                grid-template-rows: 1fr 1fr 1fr;
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media (max-width: 699px)
+        {
+            .container{
+                grid-template-rows: repeat(5, 1fr);
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>My Hobbies</h2>
+    <div class="container">
+        <div class="item"><h3>Table-Tennis</h3><img src="./tt.jpg" alt=""></div>
+        <div class="item"><h3>Playing Cricket</h3><img src="./cricket.jpg" alt=""></div>
+        <div class="item"><h3>Playing Chess</h3><img src="./chess.jpg" alt=""></div>
+        <div class="item"><h3>Playing eSports</h3><img src="./eSports.jpg" alt=""></div>
+        <div class="item"><h3>Reading Books</h3><img src="./books.jpg" alt=""></div>
+    </div>
+</body>
+</html>
